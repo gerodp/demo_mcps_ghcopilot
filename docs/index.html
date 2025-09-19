@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades de Github Copilot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation dots -->
+    <nav class="nav-dots">
+        <div class="dot active" data-section="0"></div>
+        <div class="dot" data-section="1"></div>
+        <div class="dot" data-section="2"></div>
+        <div class="dot" data-section="3"></div>
+        <div class="dot" data-section="4"></div>
+        <div class="dot" data-section="5"></div>
+    </nav>
+
+    <!-- Section 1: Agenda -->
+    <section class="section active" id="section-0">
+        <div class="container">
+            <div class="content-wrapper fade-in">
+                <h1 class="main-title">Novedades de Github Copilot</h1>
+                <div class="agenda-list">
+                    <div class="agenda-item" data-delay="0.2s">
+                        <div class="agenda-number">01</div>
+                        <div class="agenda-content">
+                            <h3>MCPs</h3>
+                            <p>Integra copilot con otras herramientas</p>
+                        </div>
+                    </div>
+                    <div class="agenda-item" data-delay="0.4s">
+                        <div class="agenda-number">02</div>
+                        <div class="agenda-content">
+                            <h3>Github Copilot Instructions</h3>
+                            <p>Define estándares de código personalizados</p>
+                        </div>
+                    </div>
+                    <div class="agenda-item" data-delay="0.6s">
+                        <div class="agenda-number">03</div>
+                        <div class="agenda-content">
+                            <h3>Prompt Files</h3>
+                            <p>Reutiliza y comparte prompts útiles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Section 2: MCPs -->
+    <section class="section" id="section-1">
+        <div class="container">
+            <div class="content-wrapper">
+                <h1 class="section-title">MCPs</h1>
+                <div class="questions-container">
+                    
+                    <div class="question-block">
+                        <button class="question-header" data-target="mcp-definition">
+                            <span>¿Qué son los MCPs?</span>
+                            <div class="chevron"></div>
+                        </button>
+                        <div class="answer-content" id="mcp-definition">
+                            <p>MCP (Model Context Protocols) es un protocolo que permite integrar modelos de IA con datos y servicios de terceros.</p>
+                            <p>Se conoce como MCPs a los MCP Servers específicos que permiten integrarnos con los datos de diferentes herramientas. <a href="https://code.visualstudio.com/mcp" target="_blank">Lista MCPs VSCode</a></p>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <button class="question-header" data-target="mcp-installation">
+                            <span>Instalación de MCPs</span>
+                            <div class="chevron"></div>
+                        </button>
+                        <div class="answer-content" id="mcp-installation">
+                            <div class="installation-grid">
+                                <div class="installation-item">
+                                    <div class="installation-header">
+                                        <h4>🔧 MCP de Jira</h4>
+                                    </div>
+                                    <p>Integración oficial de Atlassian para conectar con Jira y Confluence</p>
+                                    <a href="https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/" target="_blank" class="installation-link">
+                                        Ver guía de instalación →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <button class="question-header" data-target="jira-tools">
+                            <span>MCP de Jira - Herramientas disponibles</span>
+                            <div class="chevron"></div>
+                        </button>
+                        <div class="answer-content" id="jira-tools">
+                            <div class="tools-grid">
+                                <div class="tool-item">
+                                    <code>jira_search</code>
+                                    <span>Buscar issues con JQL</span>
+                                </div>
+                                <div class="tool-item">
+                                    <code>jira_get_issue</code>
+                                    <span>Obtener detalles de issue</span>
+                                </div>
+                                <div class="tool-item">
+                                    <code>jira_create_issue</code>
+                                    <span>Crear nuevos issues</span>
+                                </div>
+                                <div class="tool-item">
+                                    <code>jira_update_issue</code>
+                                    <span>Actualizar issues</span>
+                                </div>
+                                <div class="tool-item">
+                                    <code>jira_add_comment</code>
+                                    <span>Añadir comentarios</span>
+                                </div>
+                                <div class="tool-item">
+                                    <code>jira_transition_issue</code>
+                                    <span>Cambiar estado</span>
+                                </div>
+                                <div class="tool-item">
+                                    <code>jira_get_all_projects</code>
+                                    <span>Listar proyectos</span>
+                                </div>
+                                <div class="tool-item">
+                                    <code>jira_get_agile_boards</code>
+                                    <span>Obtener boards Agile</span>
+                                </div>
+                                <div class="tool-item">
+                                    <code>jira_get_sprints_from_board</code>
+                                    <span>Listar sprints</span>
+                                </div>
+                                <div class="tool-item">
+                                    <code>jira_batch_create_issues</code>
+                                    <span>Crear issues en lote</span>
+                                </div>
+                                <div class="tool-item other-tools">
+                                    <code>+15 más</code>
+                                    <span>Worklogs, enlaces, versiones, etc.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-section">
+                        <button class="demo-button">Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Github Copilot Instructions -->
+    <section class="section" id="section-2">
+        <div class="container">
+            <div class="content-wrapper">
+                <h1 class="section-title">Github Copilot Instructions</h1>
+                <div class="questions-container">
+                    
+                    <div class="question-block">
+                        <button class="question-header" data-target="rules-definition">
+                            <span>¿Qué son las Github Copilot Instructions?</span>
+                            <div class="chevron"></div>
+                        </button>
+                        <div class="answer-content" id="rules-definition">
+                            <p>Las <strong>Github Copilot Instructions</strong> son instrucciones personalizadas que definen cómo debe comportarse la IA de Github Copilot en tu proyecto, asegurando consistencia en el código y siguiendo las mejores prácticas de tu equipo.</p>
+                            <div class="examples-grid">
+                                <div class="example-item">
+                                    <h4>Estándares de código</h4>
+                                    <p>Espacios vs tabs, longitud de línea</p>
+                                </div>
+                                <div class="example-item">
+                                    <h4>Convenciones de nombres</h4>
+                                    <p>camelCase, snake_case, PascalCase</p>
+                                </div>
+                                <div class="example-item">
+                                    <h4>Arquitectura preferida</h4>
+                                    <p>Patrones de diseño específicos</p>
+                                </div>
+                                <div class="example-item">
+                                    <h4>Librerías del proyecto</h4>
+                                    <p>Frameworks y dependencias específicas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <button class="question-header" data-target="how-to-create">
+                            <span>¿Cómo crear Github Copilot Instructions?</span>
+                            <div class="chevron"></div>
+                        </button>
+                        <div class="answer-content" id="how-to-create">
+                            <p>Las Github Copilot Instructions se crean en la carpeta <code>.github/instructions/</code> de tu repositorio con el formato <code>NOMBRE.instructions.md</code></p>
+                            <div class="code-example">
+                                <h4>Ejemplo: java.instructions.md</h4>
+                                <pre><code>---
+applyTo: "backend/**"
+---
+
+El proyecto utiliza Spring Boot 3 con Java 17.
+
+Sigue estas convenciones:
+- Usa @RestController para controladores REST
+- Implementa DTOs para requests/responses
+- Usa @Service para lógica de negocio
+- Aplica @Entity para entidades JPA
+- Maneja excepciones con @ControllerAdvice
+
+Estructura de packages:
+- controller/ - Controladores REST
+- service/ - Lógica de negocio
+- repository/ - Acceso a datos
+- dto/ - Objects de transferencia
+- entity/ - Entidades de base de datos
+
+Usa Lombok para reducir boilerplate code.</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <button class="question-header" data-target="additional-resources">
+                            <span>Recursos adicionales</span>
+                            <div class="chevron"></div>
+                        </button>
+                        <div class="answer-content" id="additional-resources">
+                            <p>Encuentra cientos de reglas predefinidas que puedes reutilizar como Github Copilot Instructions:</p>
+                            <div class="resource-item">
+                                <h4>🔗 Awesome Cursor Rules</h4>
+                                <p>Repositorio comunitario con reglas para diferentes tecnologías y frameworks</p>
+                                <a href="https://github.com/PatrickJS/awesome-cursorrules" target="_blank" class="installation-link">
+                                    Ver repositorio →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-section">
+                        <button class="demo-button">Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Comandos de Cursor -->
+    <section class="section" id="section-3">
+        <div class="container">
+            <div class="content-wrapper">
+                <h1 class="section-title">Prompt Files</h1>
+                <div class="questions-container">
+                    
+                    <div class="question-block">
+                        <button class="question-header" data-target="commands-definition">
+                            <span>¿Qué son los Prompt Files de Github Copilot?</span>
+                            <div class="chevron"></div>
+                        </button>
+                        <div class="answer-content" id="commands-definition">
+                            <p>Los <strong>Prompt Files de Github Copilot</strong> guardan prompts que utilizamos recurrentemente en la chat, para ser invocados con una keyword.</p>
+                            <div class="commands-grid">
+                                <div class="command-item">
+                                    <div class="command-text">"Crea tickets de Jira para las tareas pendientes"</div>
+                                </div>
+                                <div class="command-item">
+                                    <div class="command-text">"Revisa los cambios de código, comprobando que siga las buenas prácticas definidas."</div>
+                                </div>
+                                <div class="command-item">
+                                    <div class="command-text">"Implementa esta funcionalidad siguiendo nuestros estándares"</div>
+                                </div>
+                            </div>
+                            <br/>
+                            <p><a href="https://docs.github.com/en/copilot/tutorials/customization-library/prompt-files" target="_blank" class="installation-link">Ver documentación sobre Prompt Files</a></p>
+                        </div>
+                    </div>
+
+                    <div class="demo-section">
+                        <button class="demo-button">Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Preguntas -->
+    <section class="section" id="section-4">
+        <div class="container">
+            <div class="content-wrapper">
+                <h1 class="section-title questions-title">¿Preguntas?</h1>
+                <div class="questions-icon">
+                    <div class="question-mark">?</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Gracias -->
+    <section class="section" id="section-5">
+        <div class="container">
+            <div class="content-wrapper">
+                <h1 class="section-title thanks-title">¡Gracias!</h1>
+                <div class="thanks-content">
+                    <div class="emoji-grid">
+                        <div class="emoji">🚀</div>
+                        <div class="emoji">💻</div>
+                        <div class="emoji">⚡</div>
+                    </div>
+                    <p class="thanks-subtitle">¡A desarrollar con MCPs!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
