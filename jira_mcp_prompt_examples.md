@@ -1,3 +1,5 @@
+Muestrame todas las tools de jira
+
 - Estoy planificando un nuevo proyecto para crear mi página web de servicios de Fractional CTO y quiero crear los siguientes tickets:
 * Diseñar el nuevo estilo
 * Definir las secciones y el contenido
@@ -7,7 +9,6 @@
 * Desplegar
 
 Deja las descripciones de los tickets vacías.
-
 
 
 - Listar tickets del proyecto

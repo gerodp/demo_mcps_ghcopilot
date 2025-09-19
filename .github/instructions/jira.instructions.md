@@ -8,4 +8,4 @@ Cuando busques tickets incluye subtasks, subbugs, etc..
 
 Muestra los resultados en formato tabla, con las siguientes columnas: key, title, summary, status, assignee.
 
-
+Se conciso, no des explicaciones adicionales.
