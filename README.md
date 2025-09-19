@@ -1,8 +1,8 @@
 # 🚀 Demo MCPs - GitHub Copilot Integrations
 
-Una demostración práctica de las capacidades de integración de GitHub Copilot con herramientas de desarrollo mediante Model Context Protocols (MCPs).
+Demostración práctica de las capacidades de integración de GitHub Copilot MCPs, además de la customización de la IA a través de Copilot instructions y la automatización de prompts recurrentes a través de Prompt Files .
 
-🌐 **[Demo Web](https://gerodp.github.io/demo_mcps_ghcopilot/docs/)** 
+🌐 **[Demo Web](https://gerodp.github.io/demo_mcps_ghcopilot/)** 
 
 ## 📋 Descripción
 
@@ -117,16 +117,16 @@ cd demo_mcps_ghcopilot
 
 ```
 # Revisar código actual
-"Follow instructions in [review.prompt.md]"
+Escribir el comando /review en el chat de Copilot
 
 # Listar tickets de Jira
-"Follow instructions in [listtickets.prompt.md]" 
+Escribir el comando /listtickets en el chat de Copilot
 
 # Comenzar trabajo en ticket específico
-"Follow instructions in [startticket.prompt.md] for ticket CPG-123"
+Escribir el comando /startticket COD_TICKET_JIRA en el chat de Copilot
 
 # Actualizar documentación
-"Follow instructions in [update-readme.prompt.md]"
+Escribir el comando /update-readme COD_TICKET_JIRA en el chat de Copilot
 ```
 
 ### Gestión de Jira con MCPs
@@ -145,17 +145,6 @@ y descripción 'Desarrollar la función X según especificaciones'"
 "Añade un comentario al ticket CPG-26 con el progreso actual del desarrollo"
 ```
 
-### Gestión de Confluence
-```
-# Crear documentación
-"Crea una página en Confluence en el espacio TECH con título 'Guía de MCPs'"
-
-# Buscar contenido
-"Busca en Confluence páginas relacionadas con 'integración GitHub Copilot'"
-
-# Gestionar comentarios
-"Añade un comentario a la página de documentación técnica"
-```
 
 ## 🎯 Casos de Uso
 
@@ -168,11 +157,6 @@ y descripción 'Desarrollar la función X según especificaciones'"
 - **Estándares consistentes**: Instructions que aseguran calidad en el código
 - **Procesos automatizados**: Menos trabajo manual con prompts reutilizables
 - **Mejor colaboración**: Integración fluida entre GitHub Copilot y Atlassian
-
-### Para Demos y Presentaciones
-- **Explicación visual**: Demo web interactiva sobre MCPs
-- **Ejemplos prácticos**: Prompts reales y funcionales documentados
-- **Configuración completa**: Setup listo para usar incluido
 
 ## 🔧 Configuración Avanzada
 
@@ -212,25 +196,3 @@ Estas son las instrucciones para el backend:
 - Seguir patrones REST
 - Documentar con JavaDoc
 ```
-
-### Demo Web Local
-
-Para ejecutar la demo web localmente:
-
-```bash
-cd docs/
-python -m http.server 8000
-# Visita http://localhost:8000
-```
-
-## 🤝 Contribuir
-
-1. Fork el proyecto
-2. Crea una rama feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
----
-
-*README actualizado: Septiembre 2025 - Migración completa a GitHub Copilot con MCPs*
